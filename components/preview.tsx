@@ -18,11 +18,11 @@ const Preview = () => {
     }
 
     // qr code center logo
-    const logo = new Image()
-    logo.src = 'https://avatars.githubusercontent.com/u/1178825?v=4'
-    logo.onload = () => {
-      ctx?.drawImage(logo, 100, 100, 50, 50)
-    }
+    // const logo = new Image()
+    // logo.src = 'https://avatars.githubusercontent.com/u/1178825?v=4'
+    // logo.onload = () => {
+    //   ctx?.drawImage(logo, 100, 100, 50, 50)
+    // }
 
     return () => {
       ctx?.clearRect(0, 0, canvas.width, canvas.height)
@@ -44,7 +44,7 @@ const Preview = () => {
       {/* download png or jpeg or svg */}
       <div className="pt-4">
         <Button type="button" onClick={downloadHandler}>
-          Download
+          Indir
         </Button>
       </div>
     </div>

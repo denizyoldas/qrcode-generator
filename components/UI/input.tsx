@@ -15,7 +15,7 @@ const Input = React.forwardRef<HTMLInputElement, Props>(
         placeholder={label}
         name={name}
         className={cx(
-          'rounded-md outline-none px-4 py-2 w-full focus:ring-2 focus:ring-blue-500',
+          'rounded-md border outline-none px-4 py-2 w-full focus:ring-2 focus:ring-blue-500',
           {
             'bg-white text-black': variant === 'primary',
             'bg-white text-blue-500': variant === 'secondary'

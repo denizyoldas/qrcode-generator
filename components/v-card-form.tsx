@@ -41,23 +41,26 @@ END:VCARD`
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 gap-4">
-      <Input {...register('firstName')} label="First Name" />
-      {errors.firstName && <span>This field is required</span>}
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <div className="grid grid-cols-2 gap-4">
+        <Input {...register('firstName')} label="First Name" />
+        {errors.firstName && <span>This field is required</span>}
 
-      <Input {...register('lastName')} label="Last Name" />
-      {errors.lastName && <span>This field is required</span>}
+        <Input {...register('lastName')} label="Last Name" />
+        {errors.lastName && <span>This field is required</span>}
 
-      <Input {...register('email')} label="Email" />
-      {errors.lastName && <span>This field is required</span>}
+        <Input {...register('email')} label="Email" />
+        {errors.lastName && <span>This field is required</span>}
 
-      <Input {...register('phone')} label="Phone" />
-      {errors.lastName && <span>This field is required</span>}
+        <Input {...register('phone')} label="Phone" />
+        {errors.lastName && <span>This field is required</span>}
 
-      <Input {...register('address')} label="Address" />
-      {errors.lastName && <span>This field is required</span>}
-
-      <Button type="submit">Submit</Button>
+        <Input {...register('address')} label="Address" />
+        {errors.lastName && <span>This field is required</span>}
+      </div>
+      <div className="pt-4">
+        <Button type="submit">QR Code Oluştur</Button>
+      </div>
     </form>
   )
 }

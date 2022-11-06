@@ -25,7 +25,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const { text } = req.body
-  const qr = await QRCode.toDataURL(text || vcard)
+  const { text, size } = req.body
+  const qr = await QRCode.toDataURL(text || vcard, { width: size || 300 })
   res.status(200).json({ qr })
 }

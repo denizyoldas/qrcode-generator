@@ -53,7 +53,7 @@ const TextForm: React.FC<Props> = ({ type }) => {
         <label className="text-gray-500 text-sm mb-1">{type}</label>
         <Input label={type} {...register('text')} />
       </div>
-      <Button type="submit">Generate</Button>
+      <Button type="submit">QR Code Oluştur</Button>
     </form>
   )
 }
