@@ -21,7 +21,7 @@ const Preview = () => {
     // const logo = new Image()
     // logo.src = 'https://avatars.githubusercontent.com/u/1178825?v=4'
     // logo.onload = () => {
-    //   ctx?.drawImage(logo, 100, 100, 50, 50)
+    //   ctx?.drawImage(logo, 90, 90, 70, 70)
     // }
 
     return () => {
